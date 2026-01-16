@@ -1,13 +1,17 @@
-import React from "react";
-import App from './pages/App';
-import "./index.css";
-import { Provider } from "react-redux";
-import ReactDOM from "react-dom/client";
-import { store } from "./pages/employee/store";
+import './index.css'
+import ReactDOM from 'react-dom/client';
 
+// ✅ Import Provider from react-redux
+import { Provider } from 'react-redux';
 
+// App component
+import App from './App';
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Redux store
+import store from './app/store';
+
+// Render the app
+ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
     <App />
   </Provider>
